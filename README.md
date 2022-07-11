@@ -1,19 +1,42 @@
-# technology-references
-	- EC2 Provision
-	- RDS performance analysis
-	- Lambda
-		○ https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-https-endpoints-for-single-function-microservices/
-	- DocumentDB 
-		○ https://docs.aws.amazon.com/documentdb/latest/developerguide/monitoring_docdb-cluster_status.html#monitoring_docdb-cluster_status-console
-		○ https://docs.aws.amazon.com/documentdb/latest/developerguide/limits.html#limits-aggregation
-	- Lambda
-		○ Using connections across lambda
-	- EC2 Key pair
-		○ MicroNugget: What are AWS EC2 Key Pairs?
-		○ AWS EC2 SSH key management | How to launch and SSH into EC2 instance with public & private key pair
-		○ https://stackoverflow.com/questions/7881469/change-key-pair-for-ec2-instance
-	- Kubectl installation 
-		○ Install kubectl on windows
-		○ https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
-	- Networking services across AWS accounts and VPCs
-https://docs.aws.amazon.com/AmazonECS/latest/bestpracticesguide/networking-connecting-services-crossaccount.html![image](https://user-images.githubusercontent.com/26170433/178306249-79637acd-a197-4814-86a0-8169b6a0068f.png)
+# AWS
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## EC2  
+  1. EC2 Key Pair
+	1. https://www.youtube.com/watch?v=lMdin-L08p4
+	2. https://www.youtube.com/watch?v=S5B09dq-jGQ
+	3. https://stackoverflow.com/questions/7881469/change-key-pair-for-ec2-instance
+  2. list
+     * With some
+     * Sub bullets
+  3. For this
+   1. do this
+      1. then this
+      2. then this
+   2. do this too
+</details>
+
+# PYTHON
+<details>
+  <summary>Click to expand!</summary>
+  
+  ```javascript
+    function logSometing(something) {
+      console.log(`Logging: ${something}`);
+    }
+  ```
+</details>
+
+# AWS
+<details>
+  <summary>Click to expand!</summary>
+
+1. EC2 Provisining  
+2. EC2 Key pair
+   1. What are EC2 Key paris
+      1. https://www.youtube.com/watch?v=lMdin-L08p4
+      2. https://stackoverflow.com/questions/7881469/change-key-pair-for-ec2-instance
+   2. SSH to EC2
+      1. https://www.youtube.com/watch?v=S5B09dq-jGQ
+</details>
