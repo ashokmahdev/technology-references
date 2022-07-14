@@ -40,3 +40,13 @@
    2. SSH to EC2
       1. https://www.youtube.com/watch?v=S5B09dq-jGQ
 </details>
+
+# Docker
+
+<details>
+  <summary>Click to expand!</summary>
+
+1. Docker - https://adamtheautomator.com/docker-build-tag/#Getting_Prepared
+</details>
+
+
