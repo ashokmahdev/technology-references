@@ -17,3 +17,5 @@ Terraform overview and setup instructions.
 Includes basic `hello world` terraform config to provision a single AWS EC2 instance.
 
 ## 03 - Basics
+
+https://www.linkedin.com/posts/milanmilanovic_softwareengineering-tech-architecture-activity-6954425299748954112-cm1Q?utm_source=linkedin_share&utm_medium=member_desktop_web
