@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>clouddb Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="bower/html5shiv/html5shiv.min.js"></script>
+        <script src="bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="index.html" class="navbar-brand"><b>clouddb</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>All Relationships</h1>
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 class="box-title">Diagrams</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom">
+                                <!-- Tabs within a box -->
+                                <h5>By default only columns that are primary keys, foreign keys or indexes are shown.</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#compactDegreeImg-chart" data-toggle="tab" aria-expanded="true">Compact</a></li>
+                                    <li class=""><a href="#largeDegreeImg-chart" data-toggle="tab" aria-expanded="true">Large</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="compactDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="compactRelationshipsDiagram" name="compactRelationshipsDiagram">
+<area shape="rect" id="node1" href="../../tables/aggregate_impacts.html" target="_top" title="aggregate_impacts" alt="" coords="1025,328,1240,621">
+<area shape="rect" id="node34" href="../../tables/risk_factors.html" target="_top" title="risk_factors" alt="" coords="363,367,527,513">
+<area shape="rect" id="node38" href="../../tables/scenarios.html" target="_top" title="scenarios" alt="" coords="677,1011,884,1187">
+<area shape="rect" id="node2" href="../../tables/aggregate_risks.html" target="_top" title="aggregate_risks" alt="" coords="1004,639,1261,932">
+<area shape="rect" id="node13" href="../../tables/customers.html" target="_top" title="customers" alt="" coords="356,2141,533,2288">
+<area shape="rect" id="node21" href="../../tables/hazard_metrics.html" target="_top" title="hazard_metrics" alt="" coords="667,443,895,648">
+<area shape="rect" id="node3" href="../../tables/allowed_configuration_values.html" target="_top" title="allowed_configuration_values" alt="" coords="299,3311,591,3457">
+<area shape="rect" id="node12" href="../../tables/configurations.html" target="_top" title="configurations" alt="" coords="39,3288,221,3435">
+<area shape="rect" id="node4" href="../../tables/asset_types.html" target="_top" title="asset_types" alt="" coords="698,1613,863,1789">
+<area shape="rect" id="node5" href="../../tables/asset_types_impact_functions.html" target="_top" title="asset_types_impact_functions" alt="" coords="1369,5,1663,181">
+<area shape="rect" id="node22" href="../../tables/impact_functions.html" target="_top" title="impact_functions" alt="" coords="1029,69,1236,275">
+<area shape="rect" id="node6" href="../../tables/asset_types_metadata.html" target="_top" title="asset_types_metadata" alt="" coords="1014,1655,1251,1807">
+<area shape="rect" id="node42" href="../../tables/tcs_metadata.html" target="_top" title="tcs_metadata" alt="" coords="694,1807,867,1953">
+<area shape="rect" id="node7" href="../../tables/asset_value_types.html" target="_top" title="asset_value_types" alt="" coords="1027,2305,1239,2452">
+<area shape="rect" id="node8" href="../../tables/asset_values.html" target="_top" title="asset_values" alt="" coords="1414,2216,1618,2392">
+<area shape="rect" id="node9" href="../../tables/assets.html" target="_top" title="assets" alt="" coords="1039,1860,1227,2095">
+<area shape="rect" id="node24" href="../../tables/investments.html" target="_top" title="investments" alt="" coords="679,2516,883,2663">
+<area shape="rect" id="node28" href="../../tables/ref_id.html" target="_top" title="ref_id" alt="" coords="692,1977,869,2153">
+<area shape="rect" id="node10" href="../../tables/assets_impact_functions.html" target="_top" title="assets_impact_functions" alt="" coords="1389,199,1643,404">
+<area shape="rect" id="node11" href="../../tables/assets_tags.html" target="_top" title="assets_tags" alt="" coords="1433,2076,1599,2199">
+<area shape="rect" id="node41" href="../../tables/tags.html" target="_top" title="tags" alt="" coords="1058,2112,1207,2288">
+<area shape="rect" id="node14" href="../../tables/decadal_states.html" target="_top" title="decadal_states" alt="" coords="971,949,1295,1360">
+<area shape="rect" id="node30" href="../../tables/regions.html" target="_top" title="regions" alt="" coords="712,1443,849,1589">
+<area shape="rect" id="node15" href="../../tables/folders.html" target="_top" title="folders" alt="" coords="1058,2505,1207,2681">
+<area shape="rect" id="node20" href="../../tables/groups.html" target="_top" title="groups" alt="" coords="706,2323,855,2499">
+<area shape="rect" id="node16" href="../../tables/folders_investments.html" target="_top" title="folders_investments" alt="" coords="1403,2579,1629,2701">
+<area shape="rect" id="node17" href="../../tables/grid_squares.html" target="_top" title="grid_squares" alt="" coords="1339,2719,1693,3012">
+<area shape="rect" id="node18" href="../../tables/grids.html" target="_top" title="grids" alt="" coords="1049,2748,1217,2924">
+<area shape="rect" id="node19" href="../../tables/group_value_types.html" target="_top" title="group_value_types" alt="" coords="1408,2409,1624,2561">
+<area shape="rect" id="node23" href="../../tables/impact_pathways.html" target="_top" title="impact_pathways" alt="" coords="1413,1184,1619,1360">
+<area shape="rect" id="node40" href="../../tables/sectors.html" target="_top" title="sectors" alt="" coords="377,2545,512,2692">
+<area shape="rect" id="node25" href="../../tables/loc_grid_squares.html" target="_top" title="loc_grid_squares" alt="" coords="1737,2209,1940,2361">
+<area shape="rect" id="node27" href="../../tables/locations.html" target="_top" title="locations" alt="" coords="1363,1619,1669,2059">
+<area shape="rect" id="node26" href="../../tables/loc_regions.html" target="_top" title="loc_regions" alt="" coords="1757,1545,1921,1697">
+<area shape="rect" id="node29" href="../../tables/region_areas.html" target="_top" title="region_areas" alt="" coords="1046,1413,1219,1565">
+<area shape="rect" id="node31" href="../../tables/rf_categories.html" target="_top" title="rf_categories" alt="" coords="325,731,565,907">
+<area shape="rect" id="node32" href="../../tables/rf_category_hierarchies.html" target="_top" title="rf_category_hierarchies" alt="" coords="5,760,255,883">
+<area shape="rect" id="node33" href="../../tables/rf_category_risk_factors.html" target="_top" title="rf_category_risk_factors" alt="" coords="655,701,907,853">
+<area shape="rect" id="node35" href="../../tables/risks.html" target="_top" title="risks" alt="" coords="1741,1249,1937,1484">
+<area shape="rect" id="node36" href="../../tables/roles.html" target="_top" title="roles" alt="" coords="377,2753,512,2900">
+<area shape="rect" id="node37" href="../../tables/roles_scopes.html" target="_top" title="roles_scopes" alt="" coords="693,2903,869,3079">
+<area shape="rect" id="node39" href="../../tables/scopes.html" target="_top" title="scopes" alt="" coords="377,2947,512,3093">
+<area shape="rect" id="node43" href="../../tables/users.html" target="_top" title="users" alt="" coords="377,3111,512,3257">
+<area shape="rect" id="node44" href="../../tables/users_configurations.html" target="_top" title="users_configurations" alt="" coords="635,3176,927,3381">
+<area shape="rect" id="node45" href="../../tables/users_roles_customers.html" target="_top" title="users_roles_customers" alt="" coords="657,2680,904,2885">
+</map>
+                                        <a name='diagram'><object type="image/svg+xml" id="compactDegreeImg" data="diagrams/summary/relationships.real.compact.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="largeDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="largeRelationshipsDiagram" name="largeRelationshipsDiagram">
+<area shape="rect" id="node1" href="../../tables/aggregate_impacts.html" target="_top" title="aggregate_impacts" alt="" coords="1025,734,1240,1120">
+<area shape="rect" id="node34" href="../../tables/risk_factors.html" target="_top" title="risk_factors" alt="" coords="363,696,527,907">
+<area shape="rect" id="node38" href="../../tables/scenarios.html" target="_top" title="scenarios" alt="" coords="677,1730,884,1940">
+<area shape="rect" id="node2" href="../../tables/aggregate_risks.html" target="_top" title="aggregate_risks" alt="" coords="1004,1138,1261,1583">
+<area shape="rect" id="node13" href="../../tables/customers.html" target="_top" title="customers" alt="" coords="356,3208,533,3448">
+<area shape="rect" id="node21" href="../../tables/hazard_metrics.html" target="_top" title="hazard_metrics" alt="" coords="667,772,895,1335">
+<area shape="rect" id="node3" href="../../tables/allowed_configuration_values.html" target="_top" title="allowed_configuration_values" alt="" coords="299,5084,591,5266">
+<area shape="rect" id="node12" href="../../tables/configurations.html" target="_top" title="configurations" alt="" coords="39,5060,221,5300">
+<area shape="rect" id="node4" href="../../tables/asset_types.html" target="_top" title="asset_types" alt="" coords="698,2492,863,2732">
+<area shape="rect" id="node5" href="../../tables/asset_types_impact_functions.html" target="_top" title="asset_types_impact_functions" alt="" coords="1369,30,1663,270">
+<area shape="rect" id="node22" href="../../tables/impact_functions.html" target="_top" title="impact_functions" alt="" coords="1029,59,1236,680">
+<area shape="rect" id="node6" href="../../tables/asset_types_metadata.html" target="_top" title="asset_types_metadata" alt="" coords="1014,2516,1251,2668">
+<area shape="rect" id="node42" href="../../tables/tcs_metadata.html" target="_top" title="tcs_metadata" alt="" coords="694,2750,867,2960">
+<area shape="rect" id="node7" href="../../tables/asset_value_types.html" target="_top" title="asset_value_types" alt="" coords="1027,3383,1239,3623">
+<area shape="rect" id="node8" href="../../tables/asset_values.html" target="_top" title="asset_values" alt="" coords="1414,3320,1618,3531">
+<area shape="rect" id="node9" href="../../tables/assets.html" target="_top" title="assets" alt="" coords="1039,2722,1227,3138">
+<area shape="rect" id="node24" href="../../tables/investments.html" target="_top" title="investments" alt="" coords="679,3682,883,4186">
+<area shape="rect" id="node28" href="../../tables/ref_id.html" target="_top" title="ref_id" alt="" coords="692,3020,869,3231">
+<area shape="rect" id="node10" href="../../tables/assets_impact_functions.html" target="_top" title="assets_impact_functions" alt="" coords="1389,570,1643,810">
+<area shape="rect" id="node11" href="../../tables/assets_tags.html" target="_top" title="assets_tags" alt="" coords="1433,3178,1599,3300">
+<area shape="rect" id="node41" href="../../tables/tags.html" target="_top" title="tags" alt="" coords="1058,3155,1207,3366">
+<area shape="rect" id="node14" href="../../tables/decadal_states.html" target="_top" title="decadal_states" alt="" coords="971,1600,1295,2222">
+<area shape="rect" id="node30" href="../../tables/regions.html" target="_top" title="regions" alt="" coords="712,2304,849,2456">
+<area shape="rect" id="node15" href="../../tables/folders.html" target="_top" title="folders" alt="" coords="1058,3676,1207,3887">
+<area shape="rect" id="node20" href="../../tables/groups.html" target="_top" title="groups" alt="" coords="706,3454,855,3664">
+<area shape="rect" id="node16" href="../../tables/folders_investments.html" target="_top" title="folders_investments" alt="" coords="1403,3750,1629,3872">
+<area shape="rect" id="node17" href="../../tables/grid_squares.html" target="_top" title="grid_squares" alt="" coords="1339,3900,1693,4346">
+<area shape="rect" id="node18" href="../../tables/grids.html" target="_top" title="grids" alt="" coords="1049,3940,1217,4210">
+<area shape="rect" id="node19" href="../../tables/group_value_types.html" target="_top" title="group_value_types" alt="" coords="1408,3559,1624,3711">
+<area shape="rect" id="node23" href="../../tables/impact_pathways.html" target="_top" title="impact_pathways" alt="" coords="1413,1894,1619,2222">
+<area shape="rect" id="node40" href="../../tables/sectors.html" target="_top" title="sectors" alt="" coords="377,3711,512,3892">
+<area shape="rect" id="node25" href="../../tables/loc_grid_squares.html" target="_top" title="loc_grid_squares" alt="" coords="1737,3231,1940,3383">
+<area shape="rect" id="node27" href="../../tables/locations.html" target="_top" title="locations" alt="" coords="1363,2480,1669,3160">
+<area shape="rect" id="node26" href="../../tables/loc_regions.html" target="_top" title="loc_regions" alt="" coords="1757,2451,1921,2603">
+<area shape="rect" id="node29" href="../../tables/region_areas.html" target="_top" title="region_areas" alt="" coords="1046,2275,1219,2427">
+<area shape="rect" id="node31" href="../../tables/rf_categories.html" target="_top" title="rf_categories" alt="" coords="325,1418,565,1599">
+<area shape="rect" id="node32" href="../../tables/rf_category_hierarchies.html" target="_top" title="rf_category_hierarchies" alt="" coords="5,1447,255,1570">
+<area shape="rect" id="node33" href="../../tables/rf_category_risk_factors.html" target="_top" title="rf_category_risk_factors" alt="" coords="655,1388,907,1540">
+<area shape="rect" id="node35" href="../../tables/risks.html" target="_top" title="risks" alt="" coords="1741,2076,1937,2434">
+<area shape="rect" id="node36" href="../../tables/roles.html" target="_top" title="roles" alt="" coords="377,4276,512,4487">
+<area shape="rect" id="node37" href="../../tables/roles_scopes.html" target="_top" title="roles_scopes" alt="" coords="693,4490,869,4700">
+<area shape="rect" id="node39" href="../../tables/scopes.html" target="_top" title="scopes" alt="" coords="377,4534,512,4744">
+<area shape="rect" id="node43" href="../../tables/users.html" target="_top" title="users" alt="" coords="377,4762,512,5031">
+<area shape="rect" id="node44" href="../../tables/users_configurations.html" target="_top" title="users_configurations" alt="" coords="635,4950,927,5160">
+<area shape="rect" id="node45" href="../../tables/users_roles_customers.html" target="_top" title="users_roles_customers" alt="" coords="657,4203,904,4472">
+</map>
+                                        <a name='diagram'><object type="image/svg+xml" id="largeDegreeImg" data="diagrams/summary/relationships.real.large.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="bower/pdfmake/pdfmake.min.js"></script>
+        <script src="bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="bower/codemirror/codemirror.js"></script>
+        <script src="bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="relationships.js"></script>
+        <script src="schemaSpy.js"></script>
+    </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>clouddb Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>clouddb</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>cust_asset_type_impact_rpt_by_category_scenario_decade</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>this_cust_name</td>
+                                    <td>character varying</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>this_category</td>
+                                    <td>character varying</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>this_scen_name</td>
+                                    <td>character varying</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>this_decade</td>
+                                    <td>integer</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>asset_type</td>
+                                    <td>character varying</td>
+                                    <td>OUT</td>
+                                </tr>
+                                <tr>
+                                    <td>fmv_total_m_usd</td>
+                                    <td>numeric</td>
+                                    <td>OUT</td>
+                                </tr>
+                                <tr>
+                                    <td>fmv_impact_m_usd</td>
+                                    <td>numeric</td>
+                                    <td>OUT</td>
+                                </tr>
+                                <tr>
+                                    <td>impact_pct</td>
+                                    <td>numeric</td>
+                                    <td>OUT</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">&#10;DECLARE&#10;&#9;this_scen_id integer;&#10;&#9;this_fmv numeric;&#10;BEGIN&#10;SELECT scenarios.id INTO this_scen_id FROM scenarios WHERE name_etl=this_scen_name;&#10;SELECT SUM(assets.asset_value) INTO this_fmv&#10;FROM assets&#10;WHERE id IN (SELECT DISTINCT assets.id&#10;&#9;&#9;&#9;FROM ((((((((risk_factors&#10;&#9;&#9;&#9;INNER JOIN impact_functions ON risk_factors.id=impact_functions.risk_factor_id)&#10;&#9;&#9;&#9;INNER JOIN assets_impact_functions ON impact_functions.id=assets_impact_functions.impact_function_id)&#10;&#9;&#9;&#9;INNER JOIN assets ON assets_impact_functions.asset_id=assets.id)&#10;&#9;&#9;&#9;INNER JOIN investments ON assets.investment_id=investments.id)&#10;&#9;&#9;&#9;INNER JOIN folders_investments ON investments.id=folders_investments.investment_id)&#10;&#9;&#9;&#9;INNER JOIN folders ON folders_investments.folder_id=folders.id)&#10;&#9;&#9;&#9;INNER JOIN groups ON folders.group_id=groups.id)&#10;&#9;&#9;&#9;INNER JOIN customers ON groups.customer_id=customers.id)&#10;&#9;&#9;&#9;WHERE customers.name=this_cust_name);&#10;RETURN QUERY&#10;WITH RECURSIVE risk_factor_tree AS (&#10;        SELECT id, name, parent_id&#10;        FROM rf_categories&#10;        UNION&#10;        SELECT rf_categories.id, rf_categories.name, rf_categories.parent_id&#10;        FROM rf_categories&#10;        INNER JOIN risk_factor_tree rftree ON rf_categories.id = rftree.parent_id)&#10;SELECT asset_types.name, ROUND(this_fmv,3),&#10;&#9;ROUND(SUM(asset_impact_to_fmv_by_scenario_decade_riskfactor(assets.id,this_scen_id,this_decade,risk_factors.id)),3) AS fmv_impact,&#10;&#9;ROUND((100 * SUM(asset_impact_to_fmv_by_scenario_decade_riskfactor(assets.id,this_scen_id,this_decade,risk_factors.id)) / this_fmv),3) AS fmv_pct&#10;FROM (((((((((risk_factors&#10;&#9;INNER JOIN impact_functions ON risk_factors.id=impact_functions.risk_factor_id)&#10;&#9;INNER JOIN assets_impact_functions ON impact_functions.id=assets_impact_functions.impact_function_id)&#10;&#9;INNER JOIN assets ON assets_impact_functions.asset_id=assets.id)&#10;&#9;INNER JOIN asset_types ON assets.asset_type_id=asset_types.id)&#10;&#9;INNER JOIN investments ON assets.investment_id=investments.id)&#10;&#9;INNER JOIN folders_investments ON investments.id=folders_investments.investment_id)&#10;&#9;INNER JOIN folders ON folders_investments.folder_id=folders.id)&#10;&#9;INNER JOIN groups ON folders.group_id=groups.id)&#10;&#9;INNER JOIN customers ON groups.customer_id=customers.id)&#10;WHERE customers.name=this_cust_name&#10;&#9;AND risk_factors.id IN (SELECT DISTINCT rf_category_risk_factors.risk_factor_id&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;FROM ((rf_category_risk_factors&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;LEFT JOIN rf_categories ON rf_category_risk_factors.rf_category_id=rf_categories.id)&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;INNER JOIN risk_factor_tree ON rf_categories.parent_id=risk_factor_tree.id)&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;WHERE risk_factor_tree.name=this_category)&#10;GROUP BY asset_types.name&#10;ORDER BY fmv_impact DESC;&#10;END;&#10;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>clouddb Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="bower/html5shiv/html5shiv.min.js"></script>
+        <script src="bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="index.html" class="navbar-brand"><b>clouddb</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>Routines</h1>
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <h3 class="box-title">Routines</h3>
+                        </div>
+                        <div class="box-body">
+                            <table id="routine_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Language</th>
+                                        <th>Deterministic</th>
+                                        <th>Return Type</th>
+                                        <th>Security Restriction</th>
+                                        <th title='Comments' class="toggle"><span>Comments</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="routines/asset_hazard_metric_name_by_riskfactor_regional.html">asset_hazard_metric_name_by_riskfactor_regional</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>character varying</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/risk_aggregates_proc_n.html">risk_aggregates_proc_n</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/score_investment.html">score_investment</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citextsend.html">citextsend</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>INTERNAL</td>
+                                        <td>false</td>
+                                        <td>bytea</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_tags_combinations.html">asset_tags_combinations</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>SETOF text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval.html">loc_risks_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/create_ref_id_trigger.html">create_ref_id_trigger</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>trigger</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_generate_v1mc.html">uuid_generate_v1mc</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>false</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_gridsquares_assign.html">loc_gridsquares_assign</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/grid_square_name_nexgddp.html">grid_square_name_nexgddp</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>character varying</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/risk_eval.html">risk_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext.html">citext</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>INTERNAL</td>
+                                        <td>true</td>
+                                        <td>citext</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_queue_for_eval.html">loc_queue_for_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_pattern_ge.html">citext_pattern_ge</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_investment_riskfactor_rpt_by_category_scenario_decade.html">cust_investment_riskfactor_rpt_by_category_scenario_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citextin.html">citextin</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>INTERNAL</td>
+                                        <td>true</td>
+                                        <td>citext</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/create_dblink_extension.html">create_dblink_extension</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_group_impact_rpt_by_scenario_decade.html">cust_group_impact_rpt_by_scenario_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_impact_timeseries_by_category_scenario.html">cust_impact_timeseries_by_category_scenario</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_aggregates_update_totals.html">asset_aggregates_update_totals</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/delete_subscription.html">delete_subscription</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/folder_impact_to_fmv_by_scenario_decade_riskfactor.html">folder_impact_to_fmv_by_scenario_decade_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/regexp_replace.html">regexp_replace</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>true</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/folder_aggregates_update_totals.html">folder_aggregates_update_totals</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/grid_square_name_make.html">grid_square_name_make</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>character varying</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_assets_rpt.html">cust_assets_rpt</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/regexp_split_to_table.html">regexp_split_to_table</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>true</td>
+                                        <td>SETOF text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/group_qty_folders_aggregated.html">group_qty_folders_aggregated</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/investment_aggregates_update_impacts.html">investment_aggregates_update_impacts</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/customer_qty_groups.html">customer_qty_groups</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_group_riskfactor_rpt_by_category_scenario_decade_tag.html">cust_group_riskfactor_rpt_by_category_scenario_decade_tag</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/min.html">min</a></td>
+                                        <td>AGGREGATE</td>
+                                        <td>INTERNAL</td>
+                                        <td>true</td>
+                                        <td>citext</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_risks_riskfactor_decade.html">asset_risks_riskfactor_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_investment_impact_timeseries_by_category_scenario.html">cust_investment_impact_timeseries_by_category_scenario</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/notify_trigger.html">notify_trigger</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>trigger</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_ns_url.html">uuid_ns_url</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/score_customer.html">score_customer</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_group_nation_impact_rpt_by_category_scenario_decade.html">cust_group_nation_impact_rpt_by_category_scenario_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/etl_gridded_data_process.html">etl_gridded_data_process</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_riskfactor_rpt_by_category_scenario_decade_tag.html">cust_riskfactor_rpt_by_category_scenario_decade_tag</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/score_asset.html">score_asset</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_assets_ext_rpt_by_riskfactor_and_scenario.html">cust_assets_ext_rpt_by_riskfactor_and_scenario</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/locs_risks_eval_if_needed.html">locs_risks_eval_if_needed</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/enable_subscription.html">enable_subscription</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_folder_riskfactor_rpt_by_category_scenario_decade.html">cust_folder_riskfactor_rpt_by_category_scenario_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/max.html">max</a></td>
+                                        <td>AGGREGATE</td>
+                                        <td>INTERNAL</td>
+                                        <td>true</td>
+                                        <td>citext</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/setval_max.html">setval_max</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_clear.html">loc_risks_clear</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_asset_type_impact_rpt_by_category_scenario_decade.html">cust_asset_type_impact_rpt_by_category_scenario_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/group_fmv.html">group_fmv</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_is_complete_hazards_gridded.html">asset_is_complete_hazards_gridded</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_hazard_metric_name_by_riskfactor_point.html">asset_hazard_metric_name_by_riskfactor_point</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>character varying</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_rpt.html">loc_risks_rpt</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>double precision</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_generate_v1.html">uuid_generate_v1</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>false</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/geo_lng_positive.html">geo_lng_positive</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_group_impact_timeseries_by_category_scenario.html">cust_group_impact_timeseries_by_category_scenario</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_generate_v3.html">uuid_generate_v3</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_flag_to_eval.html">asset_flag_to_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_generate_v4.html">uuid_generate_v4</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>false</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_is_complete_risks.html">asset_is_complete_risks</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_generate_v5.html">uuid_generate_v5</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_hazard_metric_mean_by_scenario_decade_riskfactor.html">asset_hazard_metric_mean_by_scenario_decade_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/risk_eval_carbonprice.html">risk_eval_carbonprice</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_hazard_metric_mean_regional_by_scenario_decade_riskfactor.html">asset_hazard_metric_mean_regional_by_scenario_decade_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_folder_assets_ext_rpt_by_riskfactor_and_scenario.html">cust_folder_assets_ext_rpt_by_riskfactor_and_scenario</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_impact_to_fmv_by_scenario_decade_riskfactor.html">asset_impact_to_fmv_by_scenario_decade_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_flag_complete_if_scoring_done.html">loc_flag_complete_if_scoring_done</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_group_riskfactor_rpt_by_category_scenario_decade_nation.html">cust_group_riskfactor_rpt_by_category_scenario_decade_nation</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/locs_update_proc.html">locs_update_proc</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>trigger</td>
+                                        <td>INVOKER</td>
+                                        <td><p>This trigger function for the locations table will delete point decadal states if the lat, lon, or elevation of a location has changed. This is so, upon some other process (UI) rescoring that location, new point hazard data will be brought in.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval_gridded.html">loc_risks_eval_gridded</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/breakpoints_interpolate.html">breakpoints_interpolate</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/locs_risks_eval_range.html">locs_risks_eval_range</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_is_complete_hazards_point.html">asset_is_complete_hazards_point</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_ge.html">citext_ge</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/group_aggregates_update_totals.html">group_aggregates_update_totals</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citextrecv.html">citextrecv</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>INTERNAL</td>
+                                        <td>false</td>
+                                        <td>citext</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/aggregates_update.html">aggregates_update</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_pattern_gt.html">citext_pattern_gt</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/etl_gridded_data_process_upsert.html">etl_gridded_data_process_upsert</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/customer_qty_groups_aggregated.html">customer_qty_groups_aggregated</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/investment_qty_assets.html">investment_qty_assets</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval_regional.html">loc_risks_eval_regional</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_hazard_metric_name_by_riskfactor.html">asset_hazard_metric_name_by_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>character varying</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_gt.html">citext_gt</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/split_part.html">split_part</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>true</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/investment_qty_assets_aggregated.html">investment_qty_assets_aggregated</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_smaller.html">citext_smaller</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>citext</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/activate_asset.html">activate_asset</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/folder_impact_to_fmv_by_scenario_decade_category.html">folder_impact_to_fmv_by_scenario_decade_category</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_folder_impact_timeseries_by_category_scenario.html">cust_folder_impact_timeseries_by_category_scenario</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/updates_new_proc.html">updates_new_proc</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>trigger</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval_if_needed.html">loc_risks_eval_if_needed</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/list_subscriptions.html">list_subscriptions</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/pg_notify_array.html">pg_notify_array</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_ns_dns.html">uuid_ns_dns</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/create_subscription.html">create_subscription</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/regexp_matches.html">regexp_matches</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>true</td>
+                                        <td>SETOF ARRAY</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/investment_aggregates_update_totals.html">investment_aggregates_update_totals</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/score_group.html">score_group</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_pattern_cmp.html">citext_pattern_cmp</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/hazard_feed_risk_score_proc_n.html">hazard_feed_risk_score_proc_n</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/customer_aggregates_update_impacts.html">customer_aggregates_update_impacts</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_regions_assign.html">loc_regions_assign</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_ne.html">citext_ne</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/locs_risks_eval_if_needed_range.html">locs_risks_eval_if_needed_range</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/score_location.html">score_location</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_ns_x500.html">uuid_ns_x500</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/texticnlike.html">texticnlike</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>INTERNAL</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/deactivate_asset.html">deactivate_asset</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_riskfactor_rpt_by_category_scenario_decade.html">cust_riskfactor_rpt_by_category_scenario_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/customer_flag_to_eval.html">customer_flag_to_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_risks_total_decade.html">asset_risks_total_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/replace.html">replace</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>true</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_clear_class.html">loc_risks_clear_class</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/pg_kill_connection.html">pg_kill_connection</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_assets_rpt_by_riskfactor_and_scenario.html">cust_assets_rpt_by_riskfactor_and_scenario</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/texticregexeq.html">texticregexeq</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>INTERNAL</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/modulus.html">modulus</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval_point_assign.html">loc_risks_eval_point_assign</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/impactfn_queue_locations_eval.html">impactfn_queue_locations_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/feed_trigger.html">feed_trigger</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>trigger</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_aggregates_update_impacts.html">asset_aggregates_update_impacts</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/disable_subscription.html">disable_subscription</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_eq.html">citext_eq</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_regions_unassign.html">loc_regions_unassign</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_hazard_metric_mean_gridded_by_scenario_decade_riskfactor.html">asset_hazard_metric_mean_gridded_by_scenario_decade_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_aggregates_update.html">loc_aggregates_update</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/update_to_postgis_25.html">update_to_postgis_25</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_gridsquares_unassign.html">loc_gridsquares_unassign</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval_gridded_assign.html">loc_risks_eval_gridded_assign</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/texticregexne.html">texticregexne</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>INTERNAL</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/regexp_split_to_array.html">regexp_split_to_array</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>true</td>
+                                        <td>ARRAY</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/customer_aggregates_update_totals.html">customer_aggregates_update_totals</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/folder_fmv.html">folder_fmv</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_flag_to_eval.html">loc_flag_to_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/auditing_timestamp_update.html">auditing_timestamp_update</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>trigger</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/investment_impact_to_fmv_by_scenario_decade_riskfactor.html">investment_impact_to_fmv_by_scenario_decade_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/score_folder.html">score_folder</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/regexp_match.html">regexp_match</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>true</td>
+                                        <td>ARRAY</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_aggregates_update.html">asset_aggregates_update</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_impact_by_scenario_decade_riskfactor.html">asset_impact_by_scenario_decade_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/folder_flag_to_eval.html">folder_flag_to_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/decadal_states_clear_by_location_point_hazards.html">decadal_states_clear_by_location_point_hazards</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/kill_all_connections.html">kill_all_connections</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_pattern_lt.html">citext_pattern_lt</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_le.html">citext_le</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/folder_qty_investments_aggregated.html">folder_qty_investments_aggregated</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_group_asset_type_impact_rpt_by_category_scenario_decade.html">cust_group_asset_type_impact_rpt_by_category_scenario_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_larger.html">citext_larger</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>citext</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_hash_extended.html">citext_hash_extended</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>bigint</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_risks_total_decade_by_risk_analysis.html">asset_risks_total_decade_by_risk_analysis</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citextout.html">citextout</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>INTERNAL</td>
+                                        <td>true</td>
+                                        <td>cstring</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval_segmented.html">loc_risks_eval_segmented</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/folder_aggregates_update_impacts.html">folder_aggregates_update_impacts</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_is_complete_hazards.html">asset_is_complete_hazards</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_riskfactor_rpt_by_category_scenario_decade_nation.html">cust_riskfactor_rpt_by_category_scenario_decade_nation</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_qty_locations.html">asset_qty_locations</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_nation_impact_rpt_by_category_scenario_decade.html">cust_nation_impact_rpt_by_category_scenario_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/refresh_subscription.html">refresh_subscription</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_ns_oid.html">uuid_ns_oid</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_cmp.html">citext_cmp</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/updates_proc_n.html">updates_proc_n</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/uuid_nil.html">uuid_nil</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>uuid</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_lt.html">citext_lt</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval_point.html">loc_risks_eval_point</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/folder_qty_investments.html">folder_qty_investments</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_hazard_metric_name_by_riskfactor_gridded.html">asset_hazard_metric_name_by_riskfactor_gridded</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>character varying</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/asset_hazard_metric_mean_point_by_scenario_decade_riskfactor.html">asset_hazard_metric_mean_point_by_scenario_decade_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>numeric</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/group_flag_to_eval.html">group_flag_to_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval_regional_assign.html">loc_risks_eval_regional_assign</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/loc_risks_eval_regional_assign_carbon.html">loc_risks_eval_regional_assign_carbon</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_group_impact_rpt_by_scenario.html">cust_group_impact_rpt_by_scenario</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/strpos.html">strpos</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>true</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/decadal_states_approximate.html">decadal_states_approximate</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/group_aggregates_update_impacts.html">group_aggregates_update_impacts</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_group_riskfactor_rpt_by_category_scenario_decade.html">cust_group_riskfactor_rpt_by_category_scenario_decade</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_hash.html">citext_hash</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/group_qty_folders.html">group_qty_folders</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>integer</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/translate.html">translate</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>true</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/cust_impact_timeseries_by_scenario_riskfactor.html">cust_impact_timeseries_by_scenario_riskfactor</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>SETOF record</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/set_pgaudit_session_logging.html">set_pgaudit_session_logging</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>text</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/citext_pattern_le.html">citext_pattern_le</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>C</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/create_slug_uuid.html">create_slug_uuid</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>character varying</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/texticlike.html">texticlike</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>INTERNAL</td>
+                                        <td>true</td>
+                                        <td>boolean</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/grid_square_name_loca.html">grid_square_name_loca</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>PLPGSQL</td>
+                                        <td>false</td>
+                                        <td>character varying</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="routines/investment_flag_to_eval.html">investment_flag_to_eval</a></td>
+                                        <td>FUNCTION</td>
+                                        <td>SQL</td>
+                                        <td>false</td>
+                                        <td>void</td>
+                                        <td>INVOKER</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="bower/pdfmake/pdfmake.min.js"></script>
+        <script src="bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="bower/codemirror/codemirror.js"></script>
+        <script src="bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routines.js"></script>
+        <script src="schemaSpy.js"></script>
+    </body>
+</html>

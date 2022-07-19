@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>clouddb Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>clouddb</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>decadal_states_approximate</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Parameters</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Mode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>this_gridsquare_id</td>
+                                    <td>integer</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>this_hazmet_id</td>
+                                    <td>integer</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>this_scen_id</td>
+                                    <td>integer</td>
+                                    <td>IN</td>
+                                </tr>
+                                <tr>
+                                    <td>this_decade</td>
+                                    <td>integer</td>
+                                    <td>IN</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="RoutineDefinition" class="box-title">Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">&#10;DECLARE&#10;&#9;rec RECORD;&#10;&#9;this_lngid integer;&#10;&#9;this_latid integer;&#10;&#9;k integer;&#10;&#9;w numeric := 0; -- Weighted sum&#10;&#9;d numeric := 0; -- Total distance&#10;&#9;m numeric := 0; -- Weighted mean;&#10;&#9;span_lng numeric := 1;&#10;&#9;span_lat numeric := 1;&#10;&#9;x integer;&#10;BEGIN&#10;&#9;RAISE NOTICE &#39;gridsquare_id: %&#39;, this_gridsquare_id;&#10;&#9;SELECT INTO this_lngid serial_lngid FROM grid_squares WHERE id=this_gridsquare_id;&#10;&#9;SELECT INTO this_latid serial_latid FROM grid_squares WHERE id=this_gridsquare_id;&#10;&#9;RAISE NOTICE &#39;latid: %, lngid: %&#39;, this_latid, this_lngid;&#10;&#9;SELECT INTO k val FROM app_controls WHERE name=&#39;decadal_states_approximate_method_knn_k&#39;;&#10;&#9;RAISE NOTICE &#39;k: %&#39;, k;&#10;&#9;FOR rec in (SELECT *,&#10;&#9;&#9;&#9;&#9;&#9;sqrt(power(grid_squares.serial_lngid-this_lngid,2)+power(grid_squares.serial_latid-this_latid,2)) AS dist&#10;&#9;&#9;&#9;&#9;FROM (decadal_states&#10;&#9;&#9;&#9;&#9;&#9;  INNER JOIN grid_squares&#10;&#9;&#9;&#9;&#9;&#9;  ON decadal_states.grid_square_id=grid_squares.id)&#10;&#9;&#9;&#9;&#9;WHERE hazard_metric_id=this_hazmet_id&#10;&#9;&#9;&#9;&#9;&#9;AND scenario_id=this_scen_id&#10;&#9;&#9;&#9;&#9;&#9;AND decade=this_decade&#10;&#9;&#9;&#9;&#9;&#9;AND decadal_states.approximated=false&#10;&#9;&#9;&#9;&#9;LIMIT k) LOOP&#10;&#9;&#9;RAISE NOTICE &#39;mean: %&#39;, rec.hazard_metric_mean;&#10;&#9;&#9;w := w + rec.hazard_metric_mean/rec.dist;&#10;&#9;&#9;d := d + 1/rec.dist;&#10;&#9;&#9;x := ABS(rec.serial_lngid-this_lngid);&#10;&#9;&#9;IF x&gt;span_lng THEN&#10;&#9;&#9;&#9;span_lng := x;&#10;&#9;&#9;END IF;&#10;&#9;&#9;x := ABS(rec.serial_latid-this_latid);&#10;&#9;&#9;IF x&gt;span_lat THEN&#10;&#9;&#9;&#9;span_lat := x;&#10;&#9;&#9;END IF;&#10;&#9;&#9;RAISE NOTICE &#39;w: %, d: %, spanlng: %, spanlat: %&#39;, w, d, span_lng, span_lat;&#10;&#9;END LOOP;&#10;&#9;IF d&gt;0 THEN&#10;&#9;&#9;m := w/d;&#10;&#9;&#9;RAISE NOTICE &#39;new mean: %&#39;, m;&#10;&#9;&#9;DELETE FROM decadal_states&#10;&#9;&#9;&#9;WHERE grid_square_id=this_gridsquare_id&#10;&#9;&#9;&#9;&#9;AND hazard_metric_id=this_hazmet_id&#10;&#9;&#9;&#9;&#9;AND scenario_id=this_scen_id&#10;&#9;&#9;&#9;&#9;AND decade=this_decade&#10;&#9;&#9;&#9;&#9;AND approximated=true;&#10;&#9;&#9;INSERT INTO decadal_states (grid_square_id,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;decadal_state_type,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;hazard_metric_id,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;scenario_id,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;decade,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;hazard_metric_mean,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;approximated,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;approximated_gridsquare_span_lng,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;approximated_gridsquare_span_lat)&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;VALUES (this_gridsquare_id,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;this_hazmet_id,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;this_scen_id,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;this_decade,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;m,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;true,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;span_lng,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;span_lat);&#10;&#9;END IF;&#10;END;&#10;</textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="routine.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>
