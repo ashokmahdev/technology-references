@@ -1,52 +1,19 @@
-# AWS
-<details>
-  <summary>Click to expand!</summary>
-  
-  ## EC2  
-  1. EC2 Key Pair
-	1. https://www.youtube.com/watch?v=lMdin-L08p4
-	2. https://www.youtube.com/watch?v=S5B09dq-jGQ
-	3. https://stackoverflow.com/questions/7881469/change-key-pair-for-ec2-instance
-  2. list
-     * With some
-     * Sub bullets
-  3. For this
-   1. do this
-      1. then this
-      2. then this
-   2. do this too
-</details>
+# DevOps Directive Terraform Course
 
-# PYTHON
-<details>
-  <summary>Click to expand!</summary>
-  
-  ```javascript
-    function logSometing(something) {
-      console.log(`Logging: ${something}`);
-    }
-  ```
-</details>
+This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO! (Learn Infrastructure as Code)](https://www.youtube.com/watch?v=7xngnjfIlK4)
 
-# AWS
-<details>
-  <summary>Click to expand!</summary>
+[![thumbnail](https://user-images.githubusercontent.com/1320389/154354937-98533608-2f42-44c1-8110-87f7e3f45085.jpeg)](https://www.youtube.com/watch?v=7xngnjfIlK4)
 
-1. EC2 Provisining  
-2. EC2 Key pair
-   1. What are EC2 Key paris
-      1. https://www.youtube.com/watch?v=lMdin-L08p4
-      2. https://stackoverflow.com/questions/7881469/change-key-pair-for-ec2-instance
-   2. SSH to EC2
-      1. https://www.youtube.com/watch?v=S5B09dq-jGQ
-</details>
+## 01 - Evolution of Cloud + Infrastructure as Code
 
-# Docker
+High level overview of the evolution of cloud computing and infrastructure as code.
 
-<details>
-  <summary>Click to expand!</summary>
+This module does not have any corresponding code.
 
-1. Docker - https://adamtheautomator.com/docker-build-tag/#Getting_Prepared
-</details>
+## 02 - Overview + Setup
 
+Terraform overview and setup instructions.
 
+Includes basic `hello world` terraform config to provision a single AWS EC2 instance.
+
+## 03 - Basics
