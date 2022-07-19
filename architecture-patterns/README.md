@@ -17,3 +17,9 @@ https://github.com/NikAshanin/Solution-Architect-Road-Map
 ## 03 how to become software architect
 https://www.linkedin.com/posts/milanmilanovic_softwareengineering-tech-architecture-activity-6954425299748954112-cm1Q?utm_source=linkedin_share&utm_medium=member_desktop_web
 
+## 04 System design interview questions
+
+https://www.linkedin.com/posts/milanmilanovic_design-interview-architect-activity-6950457181196496897-UkpG?utm_source=linkedin_share&utm_medium=member_desktop_web
+
+## 05 Algorithms you should know before taking interviews
+https://blog.bytebytego.com/p/algorithms-you-should-know-before
