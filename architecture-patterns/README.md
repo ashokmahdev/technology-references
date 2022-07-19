@@ -4,16 +4,22 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 
 [![thumbnail](https://user-images.githubusercontent.com/1320389/154354937-98533608-2f42-44c1-8110-87f7e3f45085.jpeg)](https://www.youtube.com/watch?v=7xngnjfIlK4)
 
-## 01 - Evolution of Cloud + Infrastructure as Code
+## 01 - Architecture Patterns
 
-High level overview of the evolution of cloud computing and infrastructure as code.
+Architecture Patterns
 
-This module does not have any corresponding code.
+https://blog.devgenius.io/top-10-architecture-characteristics-non-functional-requirements-with-cheatsheat-7ad14bbb0a9b
 
-## 02 - Overview + Setup
+## 02 how to become solution architect
 
-Terraform overview and setup instructions.
+https://github.com/NikAshanin/Solution-Architect-Road-Map
 
-Includes basic `hello world` terraform config to provision a single AWS EC2 instance.
+## 03 how to become software architect
+https://www.linkedin.com/posts/milanmilanovic_softwareengineering-tech-architecture-activity-6954425299748954112-cm1Q?utm_source=linkedin_share&utm_medium=member_desktop_web
 
-## 03 - Basics
+## 04 System design interview questions
+
+https://www.linkedin.com/posts/milanmilanovic_design-interview-architect-activity-6950457181196496897-UkpG?utm_source=linkedin_share&utm_medium=member_desktop_web
+
+## 05 Algorithms you should know before taking interviews
+https://blog.bytebytego.com/p/algorithms-you-should-know-before
