@@ -23,3 +23,7 @@ https://www.linkedin.com/posts/milanmilanovic_design-interview-architect-activit
 
 ## 05 Algorithms you should know before taking interviews
 https://blog.bytebytego.com/p/algorithms-you-should-know-before
+
+## 06 Free eProgramming books
+Github -> https://github.com/EbookFoundation/free-programming-books
+English -> https://ebookfoundation.github.io/free-programming-books-search/?&sect=books&file=free-programming-books-subjects.md#artificial-intelligence
