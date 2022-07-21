@@ -27,3 +27,9 @@ https://blog.bytebytego.com/p/algorithms-you-should-know-before
 ## 06 Free eProgramming books
 Github -> https://github.com/EbookFoundation/free-programming-books
 English -> https://ebookfoundation.github.io/free-programming-books-search/?&sect=books&file=free-programming-books-subjects.md#artificial-intelligence
+
+## 07 API design Pattenrs
+https://livebook.manning.com/book/microservices-patterns/chapter-8/v-11/227
+https://learncsdesign.medium.com/microservices-external-api-integration-patterns-60982701829d
+https://blog.stoplight.io/api-design-patterns-for-rest-web-services
+https://dzone.com/articles/a-look-at-rest-api-design-patterns
