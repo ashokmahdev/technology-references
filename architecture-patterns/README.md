@@ -33,3 +33,4 @@ https://livebook.manning.com/book/microservices-patterns/chapter-8/v-11/227
 https://learncsdesign.medium.com/microservices-external-api-integration-patterns-60982701829d
 https://blog.stoplight.io/api-design-patterns-for-rest-web-services
 https://dzone.com/articles/a-look-at-rest-api-design-patterns
+https://filipnikolovski.com/posts/thoughts-on-microservices/
