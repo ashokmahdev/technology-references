@@ -34,3 +34,17 @@ https://blog.bytebytego.com/p/algorithms-you-should-know-before
 3. https://blog.stoplight.io/api-design-patterns-for-rest-web-services
 4. https://dzone.com/articles/a-look-at-rest-api-design-patterns
 5. https://filipnikolovski.com/posts/thoughts-on-microservices/
+
+## 08 𝗧𝗼𝗽 𝟱 𝗯𝗼𝗼𝗸𝘀 𝘁𝗵𝗮𝘁 𝗵𝗮𝘃𝗲 𝗺𝗮𝗱𝗲 𝘁𝗵𝗲 𝗯𝗶𝗴𝗴𝗲𝘀𝘁 𝗶𝗺𝗽𝗮𝗰𝘁 𝗼𝗻 𝗺𝘆 𝗽𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗹 𝗰𝗮𝗿𝗲𝗲𝗿 📚
+
+𝟭. 𝗖𝗹𝗲𝗮𝗻 𝗰𝗼𝗱𝗲 by Robert C. Martin - https://lnkd.in/dvp4BZ85
+
+𝟮. 𝗣𝗿𝗮𝗴𝗺𝗮𝘁𝗶𝗰 𝗽𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗲𝗿 by David Thomas and Andrew Hunt - https://lnkd.in/d4yadgki
+
+𝟯. 𝗗𝗲𝘀𝗶𝗴𝗻 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀: 𝗘𝗹𝗲𝗺𝗲𝗻𝘁𝘀 𝗼𝗳 𝗥𝗲𝘂𝘀𝗮𝗯𝗹𝗲 𝗢𝗯𝗷𝗲𝗰𝘁-𝗢𝗿𝗶𝗲𝗻𝘁𝗲𝗱 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 by Gang of Four - https://lnkd.in/dS2vWTHb
+
+𝟰. 𝗗𝗼𝗺𝗮𝗶𝗻-𝗗𝗿𝗶𝘃𝗲𝗻 𝗗𝗲𝘀𝗶𝗴𝗻: 𝗧𝗮𝗰𝗸𝗹𝗶𝗻𝗴 𝗖𝗼𝗺𝗽𝗹𝗲𝘅𝗶𝘁𝘆 𝗶𝗻 𝘁𝗵𝗲 𝗛𝗲𝗮𝗿𝘁 𝗼𝗳 𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 by Eric Evans - https://lnkd.in/dPc4smPE
+
+𝟱. 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗼𝘂𝘀 𝗗𝗲𝗹𝗶𝘃𝗲𝗿𝘆 by Jez Humble and David Farley - https://lnkd.in/dVpbCNz9
+
+#softwareengineering #softwaredeveloper #books #book #programmers
