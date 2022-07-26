@@ -48,3 +48,7 @@ https://blog.bytebytego.com/p/algorithms-you-should-know-before
 𝟱. 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗼𝘂𝘀 𝗗𝗲𝗹𝗶𝘃𝗲𝗿𝘆 by Jez Humble and David Farley - https://lnkd.in/dVpbCNz9
 
 #softwareengineering #softwaredeveloper #books #book #programmers
+
+## Product Management
+https://www.delibr.com/post/visual-guide-to-the-best-books-on-product-management
+
