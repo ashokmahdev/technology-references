@@ -50,3 +50,9 @@
 </details>
 
 
+# Profiles
+Pagarba is a global strategy and consulting firm focused on creating products and solutions within blockchain, IoT, Artificial Intelligence, software defined radio and communications, analytics, cloud, and cybersecurity.
+Member of a remote development team responsible for full-stack application development of features and enhancements for multiple products using Scrum methods. Project:
+●	HOPE-Box (Repo: github.com/pagarba/connect-box) - HOPE-Box is an application that allows emergency responders to communicate with people in need during disasters. HOPE-box won the grand prize at AngelHack’s 12th annual global hackathon series. Front-end included embedded Openstreetmaps on React.js, backend in Node.js, PostgreSQL database, deployed to IBM cloud.
+●	IoT Platform - Contributed to a blockchain-powered IoT platform that allows users to secure device data on a blockchain. Wrote a REST API in Node.js, managed data in PostgreSQL, and tested on a Raspberry Pi.
+
