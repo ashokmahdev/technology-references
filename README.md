@@ -56,3 +56,6 @@ Member of a remote development team responsible for full-stack application devel
 ●	HOPE-Box (Repo: github.com/pagarba/connect-box) - HOPE-Box is an application that allows emergency responders to communicate with people in need during disasters. HOPE-box won the grand prize at AngelHack’s 12th annual global hackathon series. Front-end included embedded Openstreetmaps on React.js, backend in Node.js, PostgreSQL database, deployed to IBM cloud.
 ●	IoT Platform - Contributed to a blockchain-powered IoT platform that allows users to secure device data on a blockchain. Wrote a REST API in Node.js, managed data in PostgreSQL, and tested on a Raspberry Pi.
 
+
+API Security Checklist
+https://github.com/shieldfy/API-Security-Checklist
