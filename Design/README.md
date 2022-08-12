@@ -13,3 +13,6 @@ https://blog.devgenius.io/top-10-architecture-characteristics-non-functional-req
 ## 02 how to become solution architect
 
 https://github.com/NikAshanin/Solution-Architect-Road-Map
+
+## Design Patterns
+http://www.mcdonaldland.info/2007/11/28/40/
