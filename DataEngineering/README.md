@@ -12,3 +12,7 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
    2. Set 2
    
    https://intellipaat.com/blog/interview-question/data-engineer-interview-questions/
+   
+   
+ ## 02  - What is Data Pipeline | How to design Data Pipeline ? - ETL vs Data pipeline
+   https://www.youtube.com/watch?v=VtzvF17ysbc
