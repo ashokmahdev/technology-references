@@ -8,7 +8,7 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 
 1. Architecture Patterns
 
-https://www.simplilearn.com/data-engineer-interview-questions-and-answers-article
-https://intellipaat.com/blog/interview-question/data-engineer-interview-questions/
+1.https://www.simplilearn.com/data-engineer-interview-questions-and-answers-article
+2.https://intellipaat.com/blog/interview-question/data-engineer-interview-questions/
 
 
