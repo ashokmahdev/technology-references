@@ -16,3 +16,9 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
    
  ## 02  - What is Data Pipeline | How to design Data Pipeline ? - ETL vs Data pipeline
    https://www.youtube.com/watch?v=VtzvF17ysbc
+
+## 03 - Data Engineering Principles - Build frameworks not pipelines - Gatis Seja
+https://www.youtube.com/watch?v=pzfgbSfzhXg
+
+## 04  - What are some common data pipeline design patterns? What is a DAG ? | ETL vs ELT vs CDC (2022)
+youtube.com/watch?v=v67JHa4MrnQ
