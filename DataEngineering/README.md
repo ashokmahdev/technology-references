@@ -22,3 +22,6 @@ https://www.youtube.com/watch?v=pzfgbSfzhXg
 
 ## 04  - What are some common data pipeline design patterns? What is a DAG ? | ETL vs ELT vs CDC (2022)
 youtube.com/watch?v=v67JHa4MrnQ
+
+## 05  - Top AWS services for Data Engineer
+https://www.youtube.com/watch?v=tykcCf-Zz1M
