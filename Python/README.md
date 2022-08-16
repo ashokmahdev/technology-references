@@ -12,7 +12,7 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 
 ## 02 Open API with Python
 
-1. https://medium.com/@ratrosy/building-apis-with-openapi-continued-5d0faaed32eb
+1. https://medium.com/@ratrosy/building-apis-with-openapi-ac3c24e33ee3
 2. https://www.youtube.com/watch?v=t4jaTC7QjMg
 3. https://medium.com/@ratrosy/building-apis-with-openapi-continued-5d0faaed32eb
 4. Open API generator installation
