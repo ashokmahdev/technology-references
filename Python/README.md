@@ -4,10 +4,11 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 
 [![thumbnail](https://user-images.githubusercontent.com/1320389/154354937-98533608-2f42-44c1-8110-87f7e3f45085.jpeg)](https://www.youtube.com/watch?v=7xngnjfIlK4)
 
-## 01 - installation and setup
+## 01 - installation and setup and Start reading
 
 1. https://cloud.google.com/python/docs/setup#windows
 2. https://docs.python.org/3.10/tutorial/index.html
+3. https://www.educba.com/introduction-to-python/?source=leftnav
 
 
 ## 02 Open API with Python
