@@ -18,4 +18,7 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 4. Open API generator installation
   1. https://openapi-generator.tech/docs/installation
   2. https://openapi-generator.tech/docs/generators
-3. Good Video https://www.youtube.com/watch?v=OYTtlEUSDBE
+5. Good Video https://www.youtube.com/watch?v=OYTtlEUSDBE
+6. Command
+  1. openapi-generator-cli generate -i openapi.yaml -g python-flask -o codegen_server
+
