@@ -32,3 +32,4 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 1. Layered architecture -> https://medium.com/geekculture/how-to-architect-your-flask-rest-api-abf95637d9f5
 2. Layered architecture -> https://github.com/Shihara-Dilshan/John-Keells-App-Revamp/tree/main/Server
 3. Best practices -> https://auth0.com/blog/best-practices-for-flask-api-development/
+4. Flask with NGINX
