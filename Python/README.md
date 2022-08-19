@@ -11,6 +11,7 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 3. https://www.educba.com/introduction-to-python/?source=leftnav
 4. https://www.geeksforgeeks.org/python-programming-language/?ref=shm
 5. Pythonist https://www.youtube.com/watch?v=F7AK-WzpYdY&list=PLMOobVGrchXN5tKYdyx-d2OwwgxJuqDVH&index=1
+6. Python basics practice https://github.com/tecladocode/rest-apis-flask-python/tree/master/section2
 
 
 ## 02 Open API with Python
@@ -28,4 +29,6 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 8 https://stackoverflow.com/questions/58482822/openapi-tools-generator-vs-swagger-codegen
 
 ## 03 Flask API
-1. Layered architecture -> https://github.com/Shihara-Dilshan/John-Keells-App-Revamp/tree/main/Server
+1. Layered architecture -> https://medium.com/geekculture/how-to-architect-your-flask-rest-api-abf95637d9f5
+2. Layered architecture -> https://github.com/Shihara-Dilshan/John-Keells-App-Revamp/tree/main/Server
+3. Best practices -> https://auth0.com/blog/best-practices-for-flask-api-development/
