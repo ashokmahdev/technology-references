@@ -32,4 +32,7 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 1. Layered architecture -> https://medium.com/geekculture/how-to-architect-your-flask-rest-api-abf95637d9f5
 2. Layered architecture -> https://github.com/Shihara-Dilshan/John-Keells-App-Revamp/tree/main/Server
 3. Best practices -> https://auth0.com/blog/best-practices-for-flask-api-development/
-4. Flask with NGINX
+4. Flask with NGINX -> https://github.com/alectrocute/flaskSaaS
+5. Flasgger -> https://github.com/flasgger/flasgger
+6. User model and routes -> https://jarombek.com/blog/dec-24-2021-flask-python-api
+7. main and test -> https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/
