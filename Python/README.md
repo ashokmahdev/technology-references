@@ -10,6 +10,7 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 2. https://docs.python.org/3.10/tutorial/index.html
 3. https://www.educba.com/introduction-to-python/?source=leftnav
 4. https://www.geeksforgeeks.org/python-programming-language/?ref=shm
+5. Pythonist https://www.youtube.com/watch?v=F7AK-WzpYdY&list=PLMOobVGrchXN5tKYdyx-d2OwwgxJuqDVH&index=1
 
 
 ## 02 Open API with Python
