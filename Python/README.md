@@ -26,3 +26,6 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
   1. openapi-generator-cli generate -i openapi.yaml -g python-flask -o codegen_server
 7. open api vs  swagger codegen
 8 https://stackoverflow.com/questions/58482822/openapi-tools-generator-vs-swagger-codegen
+
+## 03 Flask API
+1. Layered architecture -> https://github.com/Shihara-Dilshan/John-Keells-App-Revamp/tree/main/Server
