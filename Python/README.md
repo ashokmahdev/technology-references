@@ -19,11 +19,15 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 1. https://medium.com/@ratrosy/building-apis-with-openapi-ac3c24e33ee3
 2. https://www.youtube.com/watch?v=t4jaTC7QjMg
 3. https://medium.com/@ratrosy/building-apis-with-openapi-continued-5d0faaed32eb
-4. Open API generator installation
+4. open api tools ( this is awesome) -> https://openapi.tools/
+  1. this shows tools for genertaing server absrtact code
+  2. shows tools for converting openapi sepc to postman collection
+  3. shows tools to generate mock server
+6. Open API generator installation
   1. https://openapi-generator.tech/docs/installation
   2. https://openapi-generator.tech/docs/generators
-5. Good Video https://www.youtube.com/watch?v=OYTtlEUSDBE
-6. Command
+7. Good Video https://www.youtube.com/watch?v=OYTtlEUSDBE
+8. Command
   1. openapi-generator-cli generate -i openapi.yaml -g python-flask -o codegen_server
   2. Selective generation  -> https://openapi-generator.tech/docs/customization/
       You may not want to generate all models in your project. Likewise, you may want just one or two apis to be written. If that's the case, you can use system properties or global properties to control the output.
@@ -34,7 +38,7 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
       --global-property supportingFiles
       --global-property models,supportingFiles
 7. open api vs  swagger codegen
-8 https://stackoverflow.com/questions/58482822/openapi-tools-generator-vs-swagger-codegen
+  1. https://stackoverflow.com/questions/58482822/openapi-tools-generator-vs-swagger-codegen
 
 ## 03 Flask API
 1. Layered architecture -> https://medium.com/geekculture/how-to-architect-your-flask-rest-api-abf95637d9f5
