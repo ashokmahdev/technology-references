@@ -29,14 +29,9 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
       You may not want to generate all models in your project. Likewise, you may want just one or two apis to be written. If that's the case, you can use system properties or global properties to control the output.
 
       The default is generate everything supported by the specific library. Once you enable a feature, it will restrict the contents generated:
-
-      # generate only models
       --global-property models
-      # generate only apis
       --global-property apis
-      # generate only supporting files
       --global-property supportingFiles
-      # generate models and supporting files
       --global-property models,supportingFiles
 7. open api vs  swagger codegen
 8 https://stackoverflow.com/questions/58482822/openapi-tools-generator-vs-swagger-codegen
