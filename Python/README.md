@@ -7,11 +7,12 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 ## 01 - installation and setup and Start reading
 
 1. https://cloud.google.com/python/docs/setup#windows
-2. https://docs.python.org/3.10/tutorial/index.html
-3. https://www.educba.com/introduction-to-python/?source=leftnav
-4. https://www.geeksforgeeks.org/python-programming-language/?ref=shm
-5. Pythonist https://www.youtube.com/watch?v=F7AK-WzpYdY&list=PLMOobVGrchXN5tKYdyx-d2OwwgxJuqDVH&index=1
-6. Python basics practice https://github.com/tecladocode/rest-apis-flask-python/tree/master/section2
+  1. dfsf
+3. https://docs.python.org/3.10/tutorial/index.html
+4. https://www.educba.com/introduction-to-python/?source=leftnav
+5. https://www.geeksforgeeks.org/python-programming-language/?ref=shm
+6. Pythonist https://www.youtube.com/watch?v=F7AK-WzpYdY&list=PLMOobVGrchXN5tKYdyx-d2OwwgxJuqDVH&index=1
+7. Python basics practice https://github.com/tecladocode/rest-apis-flask-python/tree/master/section2
 
 
 ## 02 Open API with Python
