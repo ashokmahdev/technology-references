@@ -48,3 +48,11 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 5. Flasgger -> https://github.com/flasgger/flasgger
 6. User model and routes -> https://jarombek.com/blog/dec-24-2021-flask-python-api
 7. main and test -> https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/
+
+## 04 Flask API Full course
+1. https://www.youtube.com/watch?v=PTZiDnuC86g
+  1. https://github.com/bradtraversy/flask_sqlalchemy_rest/blob/master/app.py
+2. https://www.youtube.com/watch?v=GMppyAPbLYk
+
+## 05 Freelancing
+1. https://studywebdevelopment.com/freelancing.html
