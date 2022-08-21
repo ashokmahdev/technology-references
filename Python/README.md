@@ -55,6 +55,7 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 2. https://www.youtube.com/watch?v=GMppyAPbLYk
 3. API Journey and issues
 4.  https://stackoverflow.com/questions/65694813/import-flask-could-not-be-resolved-from-source-pylance
+5.  OpenAPI link to API routes using code at 27th min https://www.youtube.com/watch?v=ofTA5DZUFpk
 
 ## 05 Freelancing
 1. https://studywebdevelopment.com/freelancing.html
