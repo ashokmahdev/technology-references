@@ -58,8 +58,12 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 5.  OpenAPI link to API routes using code at 27th min https://www.youtube.com/watch?v=ofTA5DZUFpk
 
 ## 05 Freelancing
-1. https://studywebdevelopment.com/freelancing.html
-2. 
+1. Need for Open API - Developer, Product, Across Enterprise 
+2. Benefits -> These are the benefits and we can go one by one
+3. defines human readable as well as machine readable speficiations. 
+4. Benefits Tooling -> API validator , API Doc, SDK Generator
+5. https://studywebdevelopment.com/freelancing.html
+6. 
 
 ## Open API
 1. why we need open API -> https://www.youtube.com/watch?v=pRS9LRBgjYg
