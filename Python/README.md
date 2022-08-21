@@ -60,3 +60,6 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 ## 05 Freelancing
 1. https://studywebdevelopment.com/freelancing.html
 2. 
+
+## Open API
+1. why we need open API -> https://www.youtube.com/watch?v=pRS9LRBgjYg
