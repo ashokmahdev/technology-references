@@ -53,6 +53,9 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 1. https://www.youtube.com/watch?v=PTZiDnuC86g
   1. https://github.com/bradtraversy/flask_sqlalchemy_rest/blob/master/app.py
 2. https://www.youtube.com/watch?v=GMppyAPbLYk
+3. API Journey and issues
+4.  https://stackoverflow.com/questions/65694813/import-flask-could-not-be-resolved-from-source-pylance
 
 ## 05 Freelancing
 1. https://studywebdevelopment.com/freelancing.html
+2. 
