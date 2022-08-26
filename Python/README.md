@@ -100,4 +100,5 @@ Takuro Wada - OpenAPI development with Python![image](https://user-images.github
 
 
 ## Connexion->Flask-> Marshmellow
-1. Flak Query -> Json using Marshmellow -> https://www.youtube.com/watch?v=kRNXKzfYrPU
+1. Flak Query -> Json using Marshmallow -> https://www.youtube.com/watch?v=kRNXKzfYrPU
+2. Flak Query -> Json using Marshmallow -> https://www.youtube.com/watch?v=j5qwif7KDx4
