@@ -67,3 +67,37 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 
 ## Open API
 1. why we need open API -> https://www.youtube.com/watch?v=pRS9LRBgjYg
+	- Open API Tooling
+		○ Open API generator
+			§ https://openapi-generator.tech/docs/installation
+			§ Usage
+				□ https://openapi-generator.tech/docs/usage
+		○ Swagger code gen
+			§ https://swagger.io/tools/swagger-codegen/
+	- API Project Structure 
+		○ References 
+			§ https://medium.com/geekculture/how-to-architect-your-flask-rest-api-abf95637d9f5
+		○ Reference 1
+			§ https://github.com/Shihara-Dilshan/John-Keells-App-Revamp/tree/main/Server
+		○ Reference 2
+			§ https://jarombek.com/blog/dec-24-2021-flask-python-api
+			§ https://github.com/AJarombek/saints-xctf-api/tree/master/api/src
+	- APIs
+		○ Scaling
+		○ Testing and Deployment and work Distribution
+		○ S
+		○ Failure 
+		○ Gateway
+	- Swagger Vs Open API Spec
+		○ https://swagger.io/blog/api-strategy/difference-between-swagger-and-openapi/
+		○ https://nordicapis.com/whats-the-difference-between-swagger-and-openapi/
+		○ https://medium.com/@tgtshanika/open-api-3-0-vs-swagger-2-0-94a80f121022
+		○ https://www.wallarm.com/what/openapi-vs-swagger-an-in-depth-clarification
+	- The Role of OAS in the API Lifecycle
+		○ https://swagger.io/resources/articles/api-development-with-openapi-swagger/
+	- Videos
+Takuro Wada - OpenAPI development with Python![image](https://user-images.githubusercontent.com/26170433/186900459-a45531a5-f844-4ac4-aee9-f16672b9cfc3.png)
+
+
+## Connexion->Flask-> Marshmellow
+1. Flak Query -> Json using Marshmellow -> https://www.youtube.com/watch?v=kRNXKzfYrPU
