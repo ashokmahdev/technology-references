@@ -5,12 +5,12 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 [![thumbnail](https://user-images.githubusercontent.com/1320389/154354937-98533608-2f42-44c1-8110-87f7e3f45085.jpeg)](https://www.youtube.com/watch?v=7xngnjfIlK4)
 
 ## 01 - installation and setup and Start reading
-
 1. https://cloud.google.com/python/docs/setup#windows
 2. https://docs.python.org/3.10/tutorial/index.html
-4. https://www.educba.com/introduction-to-python/?source=leftnav
+3. https://www.educba.com/introduction-to-python/?source=leftnav
+4. Python cheat sheet -> https://zerotomastery.io/cheatsheets/python-cheat-sheet/
 5. https://www.geeksforgeeks.org/python-programming-language/?ref=shm
-6. Pythonist https://www.youtube.com/watch?v=F7AK-WzpYdY&list=PLMOobVGrchXN5tKYdyx-d2OwwgxJuqDVH&index=1
+6 Pythonist https://www.youtube.com/watch?v=F7AK-WzpYdY&list=PLMOobVGrchXN5tKYdyx-d2OwwgxJuqDVH&index=1
 7. Python basics practice https://github.com/tecladocode/rest-apis-flask-python/tree/master/section2
 
 
