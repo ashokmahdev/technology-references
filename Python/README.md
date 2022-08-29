@@ -102,3 +102,19 @@ Takuro Wada - OpenAPI development with Python![image](https://user-images.github
 ## Connexion->Flask-> Marshmellow
 1. Flak Query -> Json using Marshmallow -> https://www.youtube.com/watch?v=kRNXKzfYrPU
 2. Flak Query -> Json using Marshmallow -> https://www.youtube.com/watch?v=j5qwif7KDx4
+
+## Open API tools and Kubernetes
+1. https://thenewstack.io/what-it-means-to-be-openapi-first-in-kubernetes/
+2. https://openapi.tools/ ![image](https://user-images.githubusercontent.com/26170433/187217427-4027f90a-3b7c-4423-83fc-88ab72033bc7.png)
+3. Swagger tools include:
+Swagger Editor: Swagger Editor lets you edit OpenAPI specifications in YAML inside your browser and to preview documentations in real time.
+Swagger UI: Swagger UI is a collection of HTML, Javascript, and CSS assets that dynamically generate beautiful documentation from an OAS-compliant API.
+Swagger Codegen: Allows generation of API client libraries (SDK generation), server stubs and documentation automatically given an OpenAPI Spec.
+Swagger Parser: Standalone library for parsing OpenAPI definitions from Java
+Swagger Core: Java-related libraries for creating, consuming, and working with OpenAPI definitions
+Swagger Inspector (free): API testing tool that lets you validate your APIs & generate OpenAPI definitions from an existing API
+SwaggerHub (free and commercial): API design and documentation, built for teams working with OpenAPI.
+![image](https://user-images.githubusercontent.com/26170433/187217536-f3e736c2-1b27-438b-b823-eed876645d88.png)
+
+
+
