@@ -60,6 +60,9 @@ Member of a remote development team responsible for full-stack application devel
 https://twitter.com/InsiderPhD/status/1544677186736619520/photo/1
 [https://twitter.com/InsiderPhD/status/1544677186736619520/photo/1](https://twitter.com/InsiderPhD/status/1544677186736619520?t=-3ASnVlrcnBcIzBq_8rD0A&s=19)
 
+# UI Courses
+https://web.dev/learn/
+
 
 API Security Checklist
 https://github.com/shieldfy/API-Security-Checklist
