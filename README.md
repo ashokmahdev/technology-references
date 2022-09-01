@@ -65,6 +65,7 @@ https://web.dev/learn/
 
 # OAUTH vs OIDC with OKTA
 https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1
+OAuth 2.0 leaves a lot of details up to implementers. For instance, it supports scopes, but scope names are not specified. It supports access tokens, but the format of those tokens are not specified. With OIDC, a number of specific scope names are defined that each produce different results. OIDC has both access tokens and ID tokens. An ID token must be JSON web token (JWT). Since the specification dictates the token format, it makes it easier to work with tokens across implementations.
 
 # API Security Checklist
 https://github.com/shieldfy/API-Security-Checklist
