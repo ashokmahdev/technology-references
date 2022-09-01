@@ -63,6 +63,8 @@ https://twitter.com/InsiderPhD/status/1544677186736619520/photo/1
 # UI Courses
 https://web.dev/learn/
 
+# OAUTH vs OIDC with OKTA
+https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1
 
-API Security Checklist
+# API Security Checklist
 https://github.com/shieldfy/API-Security-Checklist
