@@ -71,3 +71,6 @@ OAuth 2.0 leaves a lot of details up to implementers. For instance, it supports 
 
 # API Security Checklist
 https://github.com/shieldfy/API-Security-Checklist
+
+# RabbitMQ vs Apache Kafka: Comparing Message Brokers and Event Streaming Platforms
+https://www.koyeb.com/blog/rabbitmq-vs-apache-kafka-comparing-message-brokers-and-modern-event-streaming-platforms
