@@ -74,3 +74,9 @@ https://github.com/shieldfy/API-Security-Checklist
 
 # RabbitMQ vs Apache Kafka: Comparing Message Brokers and Event Streaming Platforms
 https://www.koyeb.com/blog/rabbitmq-vs-apache-kafka-comparing-message-brokers-and-modern-event-streaming-platforms
+
+# OKTA INtegration
+https://github.com/okta/samples-js-react/tree/master/okta-hosted-login
+https://github.com/okta/samples-nodejs-express-4/blob/master/resource-server/server.js
+https://developer.okta.com/blog/2020/12/16/react-login
+https://developer.okta.com/blog/2020/12/16/react-login#create-a-react-application-for-login
