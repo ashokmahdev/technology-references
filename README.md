@@ -76,6 +76,7 @@ https://github.com/shieldfy/API-Security-Checklist
 https://www.koyeb.com/blog/rabbitmq-vs-apache-kafka-comparing-message-brokers-and-modern-event-streaming-platforms
 
 # OKTA INtegration
+https://developer.okta.com/
 https://github.com/okta/samples-js-react/tree/master/okta-hosted-login
 https://github.com/okta/samples-nodejs-express-4/blob/master/resource-server/server.js
 https://developer.okta.com/blog/2020/12/16/react-login
