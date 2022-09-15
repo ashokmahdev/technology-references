@@ -16,3 +16,6 @@ https://github.com/NikAshanin/Solution-Architect-Road-Map
 
 ## Design Patterns
 http://www.mcdonaldland.info/2007/11/28/40/
+
+## Reliability Patterns
+https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns
