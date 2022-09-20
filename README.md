@@ -81,3 +81,7 @@ https://github.com/okta/samples-js-react/tree/master/okta-hosted-login
 https://github.com/okta/samples-nodejs-express-4/blob/master/resource-server/server.js
 https://developer.okta.com/blog/2020/12/16/react-login
 https://developer.okta.com/blog/2020/12/16/react-login#create-a-react-application-for-login
+
+#Databricks
+https://www.youtube.com/watch?v=auyxisjijOc
+https://www.trustradius.com/compare-products/apache-kafka-vs-databricks-lakehouse-platform
