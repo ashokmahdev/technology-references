@@ -15,6 +15,9 @@
       1. then this
       2. then this
    2. do this too
+  4. Which AWS service to use
+  	https://www.linkedin.com/posts/milanmilanovic_softwareengineering-programming-aws-activity-6986949018182406144-aB58?utm_source=share&utm_medium=member_desktop
+  5. 
 </details>
 
 # PYTHON
@@ -85,3 +88,18 @@ https://developer.okta.com/blog/2020/12/16/react-login#create-a-react-applicatio
 #Databricks
 https://www.youtube.com/watch?v=auyxisjijOc
 https://www.trustradius.com/compare-products/apache-kafka-vs-databricks-lakehouse-platform
+
+#API as product
+https://www.linkedin.com/posts/rapidapi_download-now-best-practices-for-using-external-activity-6940039336499326977-EKeS?utm_source=share&utm_medium=member_desktop
+
+#AWS
+https://www.linkedin.com/posts/milanmilanovic_softwareengineering-programming-aws-activity-6987318100438183936-9-G9?utm_source=share&utm_medium=member_desktop
+https://www.linkedin.com/posts/milanmilanovic_softwareengineering-programming-aws-activity-6986949018182406144-aB58?utm_source=share&utm_medium=member_desktop444
+DR Archiectture
+https://www.linkedin.com/posts/adriancantrill_if-you-want-to-understand-aws-you-need-to-activity-6986607062428397568-k5vf?utm_source=share&utm_medium=member_desktop
+
+#Azure
+https://www.linkedin.com/posts/milanmilanovic_azure-cloudcomputing-cloud-activity-6986998063349284864-0sPW?utm_source=share&utm_medium=member_desktop
+
+#Slack
+https://www.linkedin.com/posts/milanmilanovic_softwareengineering-programming-systemdesign-activity-6987366350599909376-GN6I?utm_source=share&utm_medium=member_desktop
