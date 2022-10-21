@@ -25,3 +25,5 @@ youtube.com/watch?v=v67JHa4MrnQ
 
 ## 05  - Top AWS services for Data Engineer
 https://www.youtube.com/watch?v=tykcCf-Zz1M
+
+https://www.linkedin.com/posts/milanmilanovic_data-datascience-dataengineering-activity-6988066520501268480-NZSI?utm_source=share&utm_medium=member_desktop
