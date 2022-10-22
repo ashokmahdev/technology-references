@@ -103,3 +103,6 @@ https://www.linkedin.com/posts/milanmilanovic_azure-cloudcomputing-cloud-activit
 
 #Slack
 https://www.linkedin.com/posts/milanmilanovic_softwareengineering-programming-systemdesign-activity-6987366350599909376-GN6I?utm_source=share&utm_medium=member_desktop
+
+#devops roadmap
+https://www.linkedin.com/posts/milanmilanovic_devops-roadmap-2022-activity-6989148991124828161-5flq?utm_source=share&utm_medium=member_desktop
