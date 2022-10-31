@@ -106,3 +106,6 @@ https://www.linkedin.com/posts/milanmilanovic_softwareengineering-programming-sy
 
 #devops roadmap
 https://www.linkedin.com/posts/milanmilanovic_devops-roadmap-2022-activity-6989148991124828161-5flq?utm_source=share&utm_medium=member_desktop
+
+Twitter Architecture
+https://www.linkedin.com/posts/milanmilanovic_technology-softwareengineering-programming-activity-6992797245595086849-lEij?utm_source=share&utm_medium=member_desktop
