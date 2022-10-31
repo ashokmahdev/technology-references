@@ -109,3 +109,6 @@ https://www.linkedin.com/posts/milanmilanovic_devops-roadmap-2022-activity-69891
 
 Twitter Architecture
 https://www.linkedin.com/posts/milanmilanovic_technology-softwareengineering-programming-activity-6992797245595086849-lEij?utm_source=share&utm_medium=member_desktop
+
+Serverless CI/CD
+https://www.linkedin.com/posts/milanmilanovic_softwareengineering-programming-devops-activity-6992029075804459008-LH23?utm_source=share&utm_medium=member_desktop
