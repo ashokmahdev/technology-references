@@ -112,3 +112,6 @@ https://www.linkedin.com/posts/milanmilanovic_technology-softwareengineering-pro
 
 Serverless CI/CD
 https://www.linkedin.com/posts/milanmilanovic_softwareengineering-programming-devops-activity-6992029075804459008-LH23?utm_source=share&utm_medium=member_desktop
+
+Algebra
+https://www.linkedin.com/posts/mengyaowang11_education-innovation-math-activity-6990960988250398720-4clr?utm_source=share&utm_medium=member_desktop
