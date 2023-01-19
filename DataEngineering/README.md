@@ -4,6 +4,25 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 
 [![thumbnail](https://user-images.githubusercontent.com/1320389/154354937-98533608-2f42-44c1-8110-87f7e3f45085.jpeg)](https://www.youtube.com/watch?v=7xngnjfIlK4)
 
+
+## 01 - There are several steps to building a strong foundation in data engineering:
+
+Learn the basics of programming, such as loops, variables, and data structures, using a language such as Python or Java.
+
+Learn SQL and become proficient in using it to query and manipulate data in a relational database.
+
+Learn how to use big data technologies such as Hadoop and Spark to process and analyze large datasets.
+
+Learn how to use cloud-based data storage and processing services, such as Amazon S3 and AWS Glue, to build scalable and reliable data pipelines.
+
+Learn how to use data visualization tools, such as Tableau or Power BI, to create interactive visualizations of your data.
+
+Learn how to use machine learning libraries, such as scikit-learn or TensorFlow, to build and deploy models that can be used to make predictions or identify patterns in your data.
+
+Learn how to use containerization and orchestration tools such as Docker and Kubernetes to deploy and manage your data pipeline in a production environment.
+
+Lastly, continue learning by keeping an eye on new technologies, reading blogs and articles, and participating in online communities to stay current on best practices and industry trends.
+
 ## 01 - Data Engineerging interview questions
    1.Set 1
    
