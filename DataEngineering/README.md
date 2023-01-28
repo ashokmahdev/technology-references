@@ -23,6 +23,9 @@ Learn how to use containerization and orchestration tools such as Docker and Kub
 
 Lastly, continue learning by keeping an eye on new technologies, reading blogs and articles, and participating in online communities to stay current on best practices and industry trends.
 
+Data Analytics Harvard Free Courses
+https://www.linkedin.com/posts/mengyaowang11_high-quality-online-courses-for-data-analysis-activity-7023985908815163392-ayrL?utm_source=share&utm_medium=member_desktop
+
 ## 01 - Data Engineerging interview questions
    1.Set 1
    
