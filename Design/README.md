@@ -6,6 +6,10 @@ This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO
 
 ## 01 - Architecture Patterns
 
+REST 
+
+https://docs.github.com/en/rest?apiVersion=2022-11-28#client-errors
+
 Architecture Patterns
 
 https://blog.devgenius.io/top-10-architecture-characteristics-non-functional-requirements-with-cheatsheat-7ad14bbb0a9b
